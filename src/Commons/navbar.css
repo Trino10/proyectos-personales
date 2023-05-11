@@ -1,0 +1,9 @@
+#logotipo {
+    height: 80px;
+}
+
+.ppal{
+    /* background-color: rgb(255, 0, 0); */
+    background: rgb(252,69,69);
+    background: linear-gradient(0deg, rgba(252,69,69,0.8701855742296919) 28%, rgba(255,255,255,1) 53%, rgba(255,0,0,1) 82%);
+}
