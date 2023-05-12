@@ -8,3 +8,33 @@
     /* background: rgb(252,69,69);
     background: linear-gradient(0deg, rgba(252,69,69,0.8701855742296919) 28%, rgba(255,255,255,1) 53%, rgba(255,0,0,1) 82%); */
 }
+
+.navppl{
+    text-decoration: none;
+    color: aliceblue    ;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navppl:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.862);
+    transition: 0.5s;
+}
+
+.navppl2{
+    text-decoration: none;
+    color: rgb(0, 0, 0)    ;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navppl2:hover{
+    text-decoration: underline;
+}

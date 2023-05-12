@@ -15,22 +15,22 @@ export const routes: Route[] = [
     {
         path: '/nskshop',
         component: NskPage,
-        name: 'nskshop'
+        name: 'Nsk Shop'
     },
     {
         path: '/merchan',
         component: MerchanPage,
-        name: 'merchan'
+        name: 'Merchan'
     },
     {
         path: '/sobrensk',
         component: SobreNskPage,
-        name: 'sobrensk'
+        name: 'Sobre Nsk'
     },
     {
         path: '/contacto',
         component: ContactoPage,
-        name: 'contacto'
+        name: 'Contacto'
     },
 
 ]

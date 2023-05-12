@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
 
 
     return (
-        <AppBar position="static">
+        <AppBar id='navbarppal' position="static">
             <Container className='ppal' maxWidth="xl">
                 <Toolbar disableGutters>
                     {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -65,16 +65,6 @@ function ResponsiveAppBar() {
                     >
                         {/* NskShop */}
                     </Typography>
-
-                    {
-                        routes.map(({path,name}) => (
-                            <NavLink to={path}>
-                                {name}
-                            </NavLink>
-                        ))
-                    }
-
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -104,11 +94,19 @@ function ResponsiveAppBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
+                            {/* {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
-                            ))}
+                            ))} */}
+
+                            {
+                                routes.map(({ path, name }) => (
+                                    <NavLink className='navppl2' to={path}>
+                                        {name}
+                                    </NavLink>
+                                ))
+                            }
                         </Menu>
                     </Box>
                     <img id='logotipo' src={foto}></img>
@@ -132,15 +130,13 @@ function ResponsiveAppBar() {
                         NskShop
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                        {
+                            routes.map(({ path, name }) => (
+                                <NavLink className='navppl' to={path}>
+                                    {name}
+                                </NavLink>
+                            ))
+                        }
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>

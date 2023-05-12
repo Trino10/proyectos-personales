@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ResponsiveAppBar from './Commons/NavBar';
-import { Route, Routes } from 'react-router-dom';
 import { Main } from './Components/Main';
 import path from 'path';
 import { routes } from './Components/routes';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
