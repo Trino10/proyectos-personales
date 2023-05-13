@@ -20,10 +20,11 @@
     justify-content: space-around;
 }
 
-.navppl:hover{
-    text-decoration: underline;
+.navppl:hover{  
     color: rgba(255, 255, 255, 0.862);
     transition: 0.5s;
+    clip-path: polygon(12% 0, 100% 0, 88% 100%, 0% 100%);
+    background-color: rgba(159, 159, 159, 0.374);
 }
 
 .navppl2{
@@ -37,4 +38,12 @@
 
 .navppl2:hover{
     text-decoration: underline;
+}
+
+.setting {
+    background-color: aqua;
+}
+
+.handleCloseUserMenu {
+    background-color: aqua;
 }
