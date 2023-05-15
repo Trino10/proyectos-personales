@@ -1,6 +1,7 @@
 
 import { ContactoPage, MerchanPage, NskPage, SobreNskPage } from "../Pages";
 
+
 type TSXComponent = () => JSX.Element;
 
 
@@ -13,7 +14,7 @@ interface Route {
 
 export const routes: Route[] = [
     {
-        path: '/nskshop',
+        path: '/',
         component: NskPage,
         name: 'Nsk Shop'
     },
@@ -30,8 +31,18 @@ export const routes: Route[] = [
     {
         path: '/contacto',
         component: ContactoPage,
-        name: 'Contacto'
+        name: 'BackEnd'
     },
+    // {
+    //     path: '/perfil',
+    //     component: PerfilPage,
+    //     name: 'Perfil'
+    // },
+    // {
+    //     path: '/BackEnd',
+    //     component: BackEndPage,
+    //     name: 'BackEnd'
+    // }
 
 ]
 

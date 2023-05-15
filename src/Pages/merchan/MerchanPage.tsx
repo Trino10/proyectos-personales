@@ -39,29 +39,7 @@ export const MerchanPage = () => {
               ))
             }
           </Grid>
-          <Grid item xs={5} sx={{ backgroundColor: 'lightgray', margin: '10px', padding: '12px', height: '28vh', borderRadius: '20px' }}>
-            <h2 id='NewCat'>Añadir nuevo Producto</h2>
-            <form action="" onSubmit={handleSubmit(onAddProducto)} noValidate>
-                <TextField 
-                { ...register('name')}
-                id='nombre'
-                label='Nombre'
-                type='text'
-                sx={{width: '70%', margin:'5px'}}
-                >
-                </TextField>
-                <TextField 
-                { ...register('precio')}
-                id='precio'
-                label='precio'
-                type='string'
-                sx={{width: '20%'}}
-                >
-                </TextField>
-                <Button type='submit' variant="contained" sx={{marginTop: '10px'}}>Añadir Producto</Button>            
-            </form>
-            
-          </Grid>
+          
         </Grid>
       </>
   )

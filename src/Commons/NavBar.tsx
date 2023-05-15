@@ -19,8 +19,8 @@ import { NavLink } from 'react-router-dom';
 
 
 
-const pages = ['NskShop', 'Merchan', 'Sobre NSK', 'Contacto'];
-const settings = ['Perfil', 'Cuenta', 'Cerrar sesión'];
+const pages = ['NskShop', 'Merchan', 'Sobre NSK', 'BackEnd'];
+const settings = ['Perfil', 'BackEnd'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -140,11 +140,13 @@ function ResponsiveAppBar() {
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
+                        
+                        <Tooltip title="Abrir configuración">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                             </IconButton>
                         </Tooltip>
+                        
                         <Menu
                             sx={{ mt: '45px' }}
                             id="menu-appbar"
@@ -158,6 +160,8 @@ function ResponsiveAppBar() {
                                 vertical: 'top',
                                 horizontal: 'right',
                             }}
+
+                            
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
