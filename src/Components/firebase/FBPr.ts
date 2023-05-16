@@ -32,6 +32,7 @@ export const newProducto = async (data: IProducto) => {
         const newData = {codigo: nanoid(20),...data}
         const docRef = doc(db,"Productos", newData.codigo);
         await setDoc(docRef, newData)
+        alert('Producto insertado')
     }catch(error){
         console.log(error)
     }

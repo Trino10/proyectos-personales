@@ -1,0 +1,85 @@
+.tabla {
+    /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 30px;
+
+}
+
+/* .tabla h2 {
+    width: 100%;
+} */
+
+.tarjeta {
+    max-width: 300px;
+    width: 300px;
+    height: 500px;
+    border: 3px solid #303030;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 247, 247, 0.463);
+    background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000);
+}
+
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.NewCat {
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nombre {
+    background-color: red;
+    padding-right: 10px;
+}
+
+.modelo {
+    background-color: aqua;
+} */
