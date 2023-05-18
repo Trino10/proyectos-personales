@@ -17,8 +17,9 @@ export const ContactoPage = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm<IProducto>();
 
-  const onAddProducto = (dataProducto: IProducto) => {
-    newProducto(dataProducto)
+  const onAddProducto = async (dataProducto: IProducto) => {
+    await newProducto(dataProducto)
+    window.location.reload();
   };
 
 

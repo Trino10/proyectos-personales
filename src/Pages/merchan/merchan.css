@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
 .tabla {
     /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
     list-style: none;
@@ -16,14 +21,18 @@
 
 .tarjeta {
     max-width: 300px;
+    color: #fff;
     width: 300px;
     height: max-content;
     border: 3px solid #303030;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 247, 247, 0.463);
+    box-shadow: 0 2px 5px rgba(255, 247, 247, 0.718);
     /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
-    background-image: linear-gradient(to right top, #ff0000, #ff3d66, #ff75ad, #ffa6e0, #f8d1fc, #decae9, #c9c2d2, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+    /* background-image:{fondo} ; */
+    /* background-image: url('../../img/camu.jpg'); */
+    background-color: rgba(113, 113, 113, 0.664);
+    background-size: cover;
 }
 
 
@@ -46,13 +55,16 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #00ff08;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #00ff08;
+}
 
 
 .NewCat {
@@ -63,7 +75,14 @@ button {
 
 
 
-
+.graffiti-text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 80px;
+    color: #ffffffcd; /* Color naranja para el graffiti */
+    text-shadow: 3px 3px 4px rgb(255, 0, 0); /* Sombra al texto */
+    width: 100%;
+    text-align: center;
+  }
 
 
 
