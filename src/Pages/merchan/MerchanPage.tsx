@@ -8,6 +8,8 @@ import './merchan.css'
 import fondo from '../../img/camuflaje.jpg'
 import grafi from '../../img/texto.png'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 
 export const MerchanPage = () => {
@@ -55,7 +57,7 @@ export const MerchanPage = () => {
                     </Typography>
                     <Typography>
                       <h3 className='precio'>
-                        {producto.precio}
+                        {producto.precio}€
                       </h3>
                     </Typography>
                     <Typography>
@@ -68,8 +70,9 @@ export const MerchanPage = () => {
                         {producto.descripcion}
                       </p>
                     </Typography>
-                    <Button type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }} endIcon={<AddShoppingCartIcon />}>
+                    <Button type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
                       Añadir al carrito
+                      <FontAwesomeIcon icon={faCartShopping} beatFade style={{color: "#ffffff",}} />
                     </Button>
                   </CardContent>
                 </React.Fragment>
