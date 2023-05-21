@@ -34,7 +34,7 @@ export const MerchanPage = () => {
   return (
     <>
       <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Grid className='tabla'  sx={{ margin: '10px', padding: '12px', borderRadius: '20px' }}>
+        <Grid className='tabla' sx={{ margin: '10px', padding: '12px', borderRadius: '20px' }}>
           {/* <img className='NewCat' src={grafi} alt="" /> */}
           <h1 className='graffiti-text'>Catálogo de productos</h1>
           {
@@ -42,6 +42,19 @@ export const MerchanPage = () => {
               <>
                 <React.Fragment>
                   <CardContent className='tarjeta'>
+                    {/* <div className="card">
+                      <div className="circle"></div>
+                      <div className="content">
+                        <h2>{producto.name}</h2>
+                        <h3>{producto.modelo}</h3>
+                        <p>{producto.descripcion}</p>
+                        <Button type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
+                          Añadir al carrito
+                          <FontAwesomeIcon icon={faCartShopping} beatFade style={{ color: "#ffffff", }} />
+                        </Button>
+                      </div>
+                      <img src={producto.foto} alt="" />
+                    </div> */}
                     <Typography>
                       <img  className='imagen' src={producto.foto} />
                     </Typography>
