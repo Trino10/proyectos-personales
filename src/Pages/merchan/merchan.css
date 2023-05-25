@@ -28,11 +28,12 @@
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 247, 247, 0.718);
-    /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
+    /* background-color: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
     /* background-image:{fondo} ; */
-    /* background-image: url('../../img/camu.jpg'); */
-    background-color: rgba(113, 113, 113, 0.664);
+    background-image: url('../../img/nsk2.png');
+    background-color: rgba(0, 0, 0, 0.582);
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -97,7 +98,7 @@ button:hover {
 
 
 
-  /* .card{
+  /* .card {
     position: relative;
     width: 600px;
     height: 350px;
@@ -106,7 +107,15 @@ button:hover {
     align-items: center;
     transition: 0.5s;
   }
-  .card .circle{
+  
+  @media screen and (max-width: 1024px) {
+    .card {
+      background: #d83133;
+      transition: none;
+    }
+  }
+  
+  .card .circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,7 +124,8 @@ button:hover {
     border-radius: 20px;
     overflow: hidden;
   }
-  .card .circle::before{
+  
+  .card .circle::before {
     content: '';
     position: absolute;
     top: 0;
@@ -126,24 +136,45 @@ button:hover {
     clip-path: circle(120px at center);
     transition: 0.5s;
   }
-  .card:hover .circle::before{
+  
+  @media screen and (max-width: 1024px) {
+    .card .circle::before {
+      background: #d83133;
+      clip-path: none;
+      transition: none;
+    }
+  }
+  
+  .card:hover .circle::before {
     background: #0065c3a5;
     clip-path: circle(400px at center);
   }
-  .card img{
+  
+  .card img {
     position: absolute;
     top: 58%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 300px;
     pointer-events: none;
     transition: 0.5s;
   }
-  .card:hover img{
+  
+  @media screen and (max-width: 768px) {
+    .card img {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 200px;
+    }
+  }
+  
+  .card:hover img {
     left: 78%;
     height: 400px;
   }
-  .card .content{
+  
+  .card .content {
     position: relative;
     width: 50%;
     left: 20%;
@@ -152,29 +183,42 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .card:hover .content{
+  
+  @media screen and (max-width: 768px) {
+    .card .content {
+      width: 100%;
+      left: 0;
+      padding: 20px;
+    }
+  }
+  
+  .card:hover .content {
     left: 0;
     opacity: 1;
     visibility: visible;
   }
-  .card .content h2{
+  
+  .card .content h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2em;
     line-height: 1em;
     margin-bottom: 5px;
   }
-  .card .content h3{
+  
+  .card .content h3 {
     color: #fff;
     text-transform: uppercase;
     font-size: 1em;
     margin-bottom: 10px;
     font-weight: 700;
   }
-  .card .content p{
+  
+  .card .content p {
     color: #fff;
   }
-  .card .content a{
+  
+  .card .content a {
     position: relative;
     color: #fff;
     padding: 10px 20px;
@@ -186,4 +230,13 @@ button:hover {
     text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .card .content a {
+      background: transparent;
+      color: #fff;
+      transition: none;
+    }
   } */
+  

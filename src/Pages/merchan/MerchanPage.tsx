@@ -41,6 +41,7 @@ export const MerchanPage = () => {
             productos.map((producto) => (
               <>
                 <React.Fragment>
+                  {/* <CardContent className='tarjeta'> */}
                   <CardContent className='tarjeta'>
                     {/* <div className="card">
                       <div className="circle"></div>

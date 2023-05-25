@@ -171,6 +171,13 @@ function ResponsiveAppBar() {
                                     <Typography textAlign="center">{setting}</Typography>
                                 </MenuItem>
                             ))}
+                            {/* {
+                                routes.map(({ path, name }) => (
+                                    <NavLink className='navppl2' to={path}>
+                                        {name}
+                                    </NavLink>
+                                ))
+                            } */}
                         </Menu>
                     </Box>
                 </Toolbar>
