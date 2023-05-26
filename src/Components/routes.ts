@@ -1,6 +1,7 @@
 
-import { ContactoPage, MerchanPage, NskPage, TablaPage } from "../Pages";
+import { MerchanPage, NskPage, TablaPage } from "../Pages";
 import { BackEndPage } from "../Pages/backend/BackEndPage";
+import { LoginPage } from "../Pages/login/LoginPage";
 
 
 type TSXComponent = () => JSX.Element;
@@ -30,13 +31,13 @@ export const routes: Route[] = [
         name: 'Tabla'
     },
     {
-        path: '/contacto',
-        component: ContactoPage,
-        name: 'BackEnd'
+        path: '/backend',
+        component: BackEndPage,
+        name: 'Backend'
     },
     {
-        path: '/BackEnd',
-        component: BackEndPage,
+        path: '/login',
+        component: LoginPage,
         name: 'Login'
     }
 

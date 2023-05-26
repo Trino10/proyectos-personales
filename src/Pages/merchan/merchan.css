@@ -20,17 +20,18 @@
 
 .tarjeta {
     max-width: 300px;
+    max-height: 530px;
     color: #fff;
     width: 300px;
-    height: max-content;
+    /* height: max-content; */
     border: 3px solid #303030;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 247, 247, 0.718);
     /* background-color: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
     /* background-image:{fondo} ; */
-    background-image: url('../../img/nsk2.png');
-    background-color: rgba(0, 0, 0, 0.582);
+    /* background-image: url('../../img/nsk2.png'); */
+    background-color: rgba(0, 0, 0, 0.784);
     background-size: cover;
     background-position: center;
     filter: blur(5);
@@ -59,6 +60,7 @@ p {
     align-items: center !important;
     width: 100%;
     padding: 10px !important;
+    background-color: red !important;
     color: #fff;
     border: none;
     border-radius: 5px;

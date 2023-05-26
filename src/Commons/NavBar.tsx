@@ -16,11 +16,13 @@ import foto from '../img/nsk2.png'
 import './navbar.css'
 import { routes } from '../Components/routes';
 import { NavLink } from 'react-router-dom';
+import { LoginPage } from '../Pages/login/LoginPage';
+import path from 'path';
 
 
 
 const pages = ['NskShop', 'Merchan', 'Sobre NSK', 'BackEnd'];
-const settings = ['Perfil', 'BackEnd'];
+const settings = ['Login', 'BackEnd'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -171,6 +173,9 @@ function ResponsiveAppBar() {
                                     <Typography textAlign="center">{setting}</Typography>
                                 </MenuItem>
                             ))}
+                            {/* <NavLink to='/login'>
+                                <LoginPage/>
+                            </NavLink> */}
                             {/* {
                                 routes.map(({ path, name }) => (
                                     <NavLink className='navppl2' to={path}>
