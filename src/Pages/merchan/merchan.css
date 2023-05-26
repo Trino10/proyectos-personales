@@ -4,7 +4,6 @@
 
 
 .tabla {
-    /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -34,6 +33,7 @@
     background-color: rgba(0, 0, 0, 0.582);
     background-size: cover;
     background-position: center;
+    filter: blur(5);
 }
 
 
@@ -52,7 +52,7 @@ p {
     margin-top: 5px;
 }
 
-button {
+.adproducto {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly !important;

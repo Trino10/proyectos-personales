@@ -5,3 +5,9 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

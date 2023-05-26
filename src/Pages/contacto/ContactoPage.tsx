@@ -121,10 +121,10 @@ export const ContactoPage = () => {
           // sx={{width: '20%', height: '40%'}}
           >
           </TextField>
-          <Button type='submit' variant="contained" sx={{ marginTop: '10px' }}>
+          <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
             Añadir Producto
           </Button>
-          <Button type='submit' variant="contained" sx={{ marginTop: '10px' }}>
+          <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
             Cargar datos
           </Button>
           

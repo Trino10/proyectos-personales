@@ -1,5 +1,5 @@
 
-import { ContactoPage, MerchanPage, NskPage, SobreNskPage } from "../Pages";
+import { ContactoPage, MerchanPage, NskPage, TablaPage } from "../Pages";
 import { BackEndPage } from "../Pages/backend/BackEndPage";
 
 
@@ -26,8 +26,8 @@ export const routes: Route[] = [
     },
     {
         path: '/sobrensk',
-        component: SobreNskPage,
-        name: 'Sobre Nsk'
+        component: TablaPage,
+        name: 'Tabla'
     },
     {
         path: '/contacto',

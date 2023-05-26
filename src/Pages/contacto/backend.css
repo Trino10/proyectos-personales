@@ -13,6 +13,12 @@
     background-image: linear-gradient(to right top, #a4a4a4, #787878, #4f4f4f, #2a2a2a, #000000);
 }
 
+h2#NewCat {
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 3px 3px 4px rgb(255, 0, 0); /* Sombra al texto */
+    font-size: 45px;
+}
+
 .form {
     display: flex;
     flex-flow: row wrap;
@@ -20,4 +26,17 @@
     align-items: center;
     gap: 10px;
     max-width: 500px;
+}
+
+.botonform {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    width: 100%;
+    padding: 10px !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

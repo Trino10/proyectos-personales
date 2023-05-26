@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../../config/firebaseConfig";
-import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
 import { IProducto } from "../interfaces/IProductos";
 import { nanoid } from "nanoid";
 
@@ -28,7 +28,7 @@ export const getProductos = async ():Promise<IProducto[]> => {
 
 export const newProducto = async (data: IProducto) => {
     try{
-        data.id = nanoid(20);
+        data.codigo = nanoid(20);
         const newData = {codigo: nanoid(20),...data}
         const docRef = doc(db,"Productos", newData.codigo);
         await setDoc(docRef, newData)
@@ -36,4 +36,21 @@ export const newProducto = async (data: IProducto) => {
     }catch(error){
         console.log(error)
     }
+}
+
+// export const deleteProducto = async (data: IProducto) => {
+//     try{
+//         data.id = nanoid(20);
+//         const deleteData = {codigo: nanoid(20),...data}
+//         const docRef = doc(db,"Productos", deleteData.codigo);
+//         await deleteDoc(docRef)
+//         alert('Producto borrado')
+//     }catch(error){
+//         console.log(error)
+//     }
+// }
+
+export const deleteProducto = async (codigo: string) => {
+    await deleteDoc(doc(db, "Productos", codigo))
+    window.location.reload();
 }

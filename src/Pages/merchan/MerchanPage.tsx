@@ -84,7 +84,7 @@ export const MerchanPage = () => {
                         {producto.descripcion}
                       </p>
                     </Typography>
-                    <Button type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
+                    <Button className='adproducto' type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
                       Añadir al carrito
                       <FontAwesomeIcon icon={faCartShopping} beatFade style={{color: "#ffffff",}} />
                     </Button>
