@@ -10,6 +10,11 @@ import grafi from '../../img/texto.png'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
+
 
 
 export const MerchanPage = () => {
@@ -35,33 +40,15 @@ export const MerchanPage = () => {
     <>
       <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <Grid className='tabla' sx={{ margin: '10px', padding: '12px', borderRadius: '20px' }}>
-          {/* <img className='NewCat' src={grafi} alt="" /> */}
           <h1 className='graffiti-text'>Catálogo de productos</h1>
           {
             productos.map((producto) => (
               <>
                 <React.Fragment>
-                  {/* <CardContent className='tarjeta'> */}
                   <CardContent className='tarjeta'>
-                    {/* <div className="card">
-                      <div className="circle"></div>
-                      <div className="content">
-                        <h2>{producto.name}</h2>
-                        <h3>{producto.modelo}</h3>
-                        <p>{producto.descripcion}</p>
-                        <Button type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
-                          Añadir al carrito
-                          <FontAwesomeIcon icon={faCartShopping} beatFade style={{ color: "#ffffff", }} />
-                        </Button>
-                      </div>
-                      <img src={producto.foto} alt="" />
-                    </div> */}
-                    <Typography>
-                      <img  className='imagen' src={producto.foto} />
-                    </Typography>
                     <Typography>
                       <h2 className='nombre'>
-                        {producto.name}
+                        {producto.name}<span className='corazon'><FavoriteIcon/></span>
                       </h2>
                     </Typography>
                     <Typography>
@@ -70,14 +57,17 @@ export const MerchanPage = () => {
                       </h2>
                     </Typography>
                     <Typography>
-                      <h3 className='precio'>
-                        {producto.precio}€
-                      </h3>
+                      <h2 className='precio'>
+                      {producto.precio}€
+                      </h2>
                     </Typography>
                     <Typography>
-                      <h5 className='talla'>
+                      <img className='imagen' src={producto.foto} />
+                    </Typography>
+                    <Typography>
+                      <h2 className='talla'>
                         Talla: {producto.talla}
-                      </h5>
+                      </h2>
                     </Typography>
                     <Typography>
                       <p className='desc'>
@@ -86,7 +76,7 @@ export const MerchanPage = () => {
                     </Typography>
                     <Button className='adproducto' type='submit' variant="contained" sx={{ marginTop: '10px', background: 'black' }}>
                       Añadir al carrito
-                      <FontAwesomeIcon icon={faCartShopping} beatFade style={{color: "#ffffff",}} />
+                      <FontAwesomeIcon icon={faCartShopping} beatFade style={{ color: "#ffffff", }} />
                     </Button>
                   </CardContent>
                 </React.Fragment>

@@ -38,18 +38,6 @@ export const newProducto = async (data: IProducto) => {
     }
 }
 
-// export const deleteProducto = async (data: IProducto) => {
-//     try{
-//         data.id = nanoid(20);
-//         const deleteData = {codigo: nanoid(20),...data}
-//         const docRef = doc(db,"Productos", deleteData.codigo);
-//         await deleteDoc(docRef)
-//         alert('Producto borrado')
-//     }catch(error){
-//         console.log(error)
-//     }
-// }
-
 export const deleteProducto = async (codigo: string) => {
     await deleteDoc(doc(db, "Productos", codigo))
     window.location.reload();

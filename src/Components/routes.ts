@@ -1,4 +1,3 @@
-
 import { MerchanPage, NskPage, TablaPage } from "../Pages";
 import { BackEndPage } from "../Pages/backend/BackEndPage";
 import { LoginPage } from "../Pages/login/LoginPage";
@@ -41,6 +40,5 @@ export const routes: Route[] = [
         component: LoginPage,
         name: 'Login'
     }
-
 ]
 
