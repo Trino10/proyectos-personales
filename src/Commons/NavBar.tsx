@@ -22,7 +22,7 @@ import path from 'path';
 
 
 const pages = ['NskShop', 'Merchan', 'Sobre NSK', 'BackEnd'];
-const settings = ['Login', 'BackEnd'];
+const settings = ['Login'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -161,10 +161,14 @@ function ResponsiveAppBar() {
                             onClose={handleCloseUserMenu}
                         >
                             {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
+                                <NavLink className='menuderecha' to='/login'>
+                                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                                        <Typography textAlign="center">{setting}</Typography>
+                                    </MenuItem>
+                                </NavLink>
                             ))}
+
+                        
                         </Menu>
                     </Box>
                 </Toolbar>

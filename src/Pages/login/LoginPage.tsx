@@ -37,7 +37,7 @@ export const LoginPage = () => {
                 >
                 </TextField>
                 <NavLink to='/tabla'>
-                    <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
+                    <Button className='adproducto' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
                         Iniciar Sesión
                     </Button>
                 </NavLink>

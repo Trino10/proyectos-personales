@@ -73,3 +73,25 @@
 .navppl2:nth-child(3) {
     display: none;
 }
+
+.navppl:nth-child(5) {
+    display: none;
+}
+
+.navppl2:nth-child(5) {
+    display: none;
+}
+
+.menuderecha {
+    text-decoration: none;
+    color: rgb(0, 0, 0)    ;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: red !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; */
+}
