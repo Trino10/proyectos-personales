@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/system';
-import TablePagination, {tablePaginationClasses as classes,} from '@mui/base/TablePagination';
+import TablePagination, { tablePaginationClasses as classes, } from '@mui/base/TablePagination';
 import { IProducto } from '../../Components/interfaces/IProductos';
 import './tabla.css'
 import { Button } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { deleteProducto, getProductos } from '../../Components/firebase/FBPr';
+import { NavLink } from 'react-router-dom';
+import AddIcon from '@mui/icons-material/Add';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+
 
 export default function UnstyledTable() {
   const [page, setPage] = React.useState(0);
@@ -36,6 +40,11 @@ export default function UnstyledTable() {
 
   return (
     <Root>
+      <NavLink to='/backend'>
+        <Button className='botonadd' type='submit' variant="contained" sx={{ marginTop: '10px' }} endIcon={<AddCircleIcon/>}>
+          Añadir
+        </Button>
+      </NavLink>
       <TableContainer className='tabla1'>
         <Table aria-label="custom pagination table">
           <TableHead className='cabecera'>
@@ -66,9 +75,9 @@ export default function UnstyledTable() {
           <TableBody>
             {(rowsPerPage > 0
               ? productos.slice(
-                  page * rowsPerPage,
-                  page * rowsPerPage + rowsPerPage
-                )
+                page * rowsPerPage,
+                page * rowsPerPage + rowsPerPage
+              )
               : productos
             ).map((producto) => (
               <TableRow key={producto.codigo}>
@@ -79,7 +88,7 @@ export default function UnstyledTable() {
                 <TableCell align="left">{producto.color}</TableCell>
                 <TableCell align="left">{producto.descripcion}</TableCell>
                 <TableCell align="right">
-                <Button onClick={() => producto.codigo && deleteProducto(producto.codigo)} id='deletebtn2' endIcon={<FontAwesomeIcon icon={faTrash} />}></Button>
+                  <Button onClick={() => producto.codigo && deleteProducto(producto.codigo)} id='deletebtn2' endIcon={<FontAwesomeIcon icon={faTrash} />}></Button>
                 </TableCell>
               </TableRow>
             ))}

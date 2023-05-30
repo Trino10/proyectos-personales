@@ -49,7 +49,6 @@ function ResponsiveAppBar() {
         <AppBar id='navbarppal' position="static">
             <Container className='ppal' maxWidth="xl">
                 <Toolbar disableGutters>
-                    {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
                     <Typography
                         variant="h6"
                         noWrap
@@ -97,12 +96,6 @@ function ResponsiveAppBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {/* {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))} */}
-
                             {
                                 routes.map(({ path, name }) => (
                                     <NavLink className='navppl2' to={path}>
@@ -113,7 +106,6 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
                     <img id='logotipo' src={foto}></img>
-                    {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
                     <Typography
                         variant="h5"
                         noWrap
@@ -130,7 +122,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        NskShop
+                        {/* NskShop */}
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {
@@ -173,16 +165,6 @@ function ResponsiveAppBar() {
                                     <Typography textAlign="center">{setting}</Typography>
                                 </MenuItem>
                             ))}
-                            {/* <NavLink to='/login'>
-                                <LoginPage/>
-                            </NavLink> */}
-                            {/* {
-                                routes.map(({ path, name }) => (
-                                    <NavLink className='navppl2' to={path}>
-                                        {name}
-                                    </NavLink>
-                                ))
-                            } */}
                         </Menu>
                     </Box>
                 </Toolbar>

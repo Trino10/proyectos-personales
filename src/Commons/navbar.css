@@ -63,3 +63,19 @@
 .handleCloseUserMenu {
     background-color: aqua;
 }
+
+.navppl:nth-child(2) {
+    display: none;
+}
+
+.navppl:nth-child(3) {
+    display: none;
+}
+
+.navppl2:nth-child(2) {
+    display: none;
+}
+
+.navppl2:nth-child(3) {
+    display: none;
+}

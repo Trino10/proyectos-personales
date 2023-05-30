@@ -15,18 +15,14 @@ interface Route {
 }
 
 export const routes: Route[] = [
+    
     {
         path: '/',
-        component: NskPage,
-        name: 'Nsk Shop'
-    },
-    {
-        path: '/merchan',
         component: MerchanPage,
-        name: 'Merchan'
+        name: 'Catálogo'
     },
     {
-        path: '/sobrensk',
+        path: '/tabla',
         component: TablaPage,
         name: 'Tabla'
     },
@@ -34,6 +30,11 @@ export const routes: Route[] = [
         path: '/backend',
         component: BackEndPage,
         name: 'Backend'
+    },
+    {
+        path: '/shop',
+        component: NskPage,
+        name: 'Nsk Shop'
     },
     {
         path: '/login',

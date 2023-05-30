@@ -36,15 +36,11 @@ export const LoginPage = () => {
                     color="warning"
                 >
                 </TextField>
-
-                <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
-                    Iniciar Sesión
-                    {
-                        <NavLink to='/backend'>
-                            {/* <BackEndPage/> */}
-                        </NavLink>
-                    }
-                </Button>
+                <NavLink to='/tabla'>
+                    <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
+                        Iniciar Sesión
+                    </Button>
+                </NavLink>
             </form>
 
         </Grid>
