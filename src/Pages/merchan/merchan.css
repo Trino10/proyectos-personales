@@ -37,7 +37,8 @@
 
 .corazon {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .precio {
@@ -50,7 +51,7 @@
 .desc {
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
+    -webkit-line-clamp: 1 !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
 }
