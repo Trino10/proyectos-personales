@@ -42,3 +42,18 @@ export const deleteProducto = async (codigo: string) => {
     await deleteDoc(doc(db, "Productos", codigo))
     window.location.reload();
 }
+
+// // carga masiva
+// export const cargarprod = async () => {
+//     try {
+//         console.log('carga de datos...');
+//         zapas.map(async (zapa) => {
+//             const codigo = nanoid(20);
+//             const docRef = doc(db, "Productos", codigo);
+//             await setDoc(docRef, { codigo: codigo, ...zapa });
+//             window.location.reload();
+//         });
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };

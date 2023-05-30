@@ -1,0 +1,112 @@
+[
+  {
+    "codigo": "001",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Air Max 270",
+    "precio": "129.99",
+    "foto": "https://static.nike.com/a/images/t_default/a229b012-c62d-4f89-9ed2-3fca4bbe274a/air-jordan-1-retro-high-og-zapatillas-bdgqHT.png",
+    "descripcion": "Zapatillas deportivas con tecnología de amortiguación",
+    "marca": "Nike",
+    "talla": "35-52",
+    "color": "Negro"
+  },
+  {
+    "codigo": "002",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Ultra Boost",
+    "precio": "169.99",
+    "foto": "https://static.nike.com/a/images/t_default/9745cafa-fb54-4457-a8fd-3f120f9ae751/zapatillas-dunk-low-nino-a-6tpT9z.png",
+    "descripcion": "Zapatillas deportivas con retorno de energía y comodidad superior",
+    "marca": "Adidas",
+    "talla": "33-48",
+    "color": "Blanco"
+  },
+  {
+    "codigo": "003",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Gel-Kayano 27",
+    "precio": "149.99",
+    "foto": "https://static.nike.com/a/images/t_default/5fea6277-542a-4e77-9176-2e97117b9f0a/dunk-low-zapatillas-VB5h2T.png",
+    "descripcion": "Zapatillas deportivas con excelente soporte y estabilidad",
+    "marca": "ASICS",
+    "talla": "34-45",
+    "color": "Azul"
+  },
+  {
+    "codigo": "004",
+    "name": "Zapatillas Deportivas",
+    "modelo": "FuelCell Propel",
+    "precio": "119.99",
+    "foto": "https://static.nike.com/a/images/t_default/aafd661d-dfa4-4736-bce4-a8addae07cfa/zoom-rival-zapatillas-con-clavos-multiples-eventos-de-atletismo-Znd3Cs.png",
+    "descripcion": "Zapatillas deportivas con gran respuesta y ligereza",
+    "marca": "New Balance",
+    "talla": "33-44",
+    "color": "Negro/Blanco"
+  },
+  {
+    "codigo": "005",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Ultraboost DNA",
+    "precio": "179.99",
+    "foto": "https://static.nike.com/a/images/t_default/1179fcfd-66fb-47fd-abd6-f2291c7599b9/air-max-dawn-zapatillas-WjgZQV.png",
+    "descripcion": "Zapatillas deportivas de edición especial con un diseño llamativo",
+    "marca": "Adidas",
+    "talla": "33-38",
+    "color": "Negro/Rojo"
+  },
+  {
+    "codigo": "006",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Air Zoom Pegasus 38",
+    "precio": "109.99",
+    "foto": "https://static.nike.com/a/images/t_default/6ad50b7b-34e6-4d08-a7d3-a0a095400932/zoom-fly-5-zapatillas-de-running-carretera-p5TWL7.png",
+    "descripcion": "Zapatillas deportivas versátiles para correr y entrenar",
+    "marca": "Nike",
+    "talla": "35-37",
+    "color": "Gris"
+  },
+  {
+    "codigo": "007",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Fresh Foam 1080v11",
+    "precio": "139.99",
+    "foto": "zapatillas7.jpg",
+    "descripcion": "Zapatillas deportivas con una amortiguación suave y reactiva",
+    "marca": "New Balance",
+    "talla": "35-47",
+    "color": "Negro"
+  },
+  {
+    "codigo": "008",
+    "name": "Zapatillas Deportivas",
+    "modelo": "Joyride Run Flyknit",
+    "precio": "149.99",
+    "foto": "https://static.nike.com/a/images/t_default/6361f8ae-edc4-4db5-8ea4-a43cf02f4222/air-jordan-1-elevate-high-zapatillas-9v1zvx.png",
+    "descripcion": "Zapatillas deportivas con tecnología de amortiguación única",
+    "marca": "Nike",
+    "talla": "39-50",
+    "color": "Gris/Rosa"
+  },
+  {
+    "codigo": "009",
+    "name": "Zapatillas Deportivas",
+    "modelo": "SolarBoost",
+    "precio": "139.99",
+    "foto": "https://i.pinimg.com/originals/2e/a7/8f/2ea78f7845ebca8ca7bde968a7204a47.png",
+    "descripcion": "Zapatillas deportivas con retorno de energía y estabilidad",
+    "marca": "Adidas",
+    "talla": "35-43",
+    "color": "Azul/Blanco"
+  },
+  {
+    "codigo": "010",
+    "name": "Zapatillas Deportivas",
+    "modelo": "GT-2000 10",
+    "precio": "129.99",
+    "foto": "https://static.nike.com/a/images/t_default/a229b012-c62d-4f89-9ed2-3fca4bbe274a/air-jordan-1-retro-high-og-zapatillas-bdgqHT.png",
+    "descripcion": "Zapatillas deportivas para corredores de larga distancia",
+    "marca": "ASICS",
+    "talla": "37-44",
+    "color": "Negro/Verde"
+  }
+]
