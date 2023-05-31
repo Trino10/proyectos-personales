@@ -4,7 +4,7 @@ import { collection, deleteDoc, doc, getDocs, getFirestore, setDoc } from "fireb
 import { IProducto } from "../interfaces/IProductos";
 import { nanoid } from "nanoid";
 
-
+// import zapas from './data/zapas.json'
 
 
 
@@ -44,16 +44,31 @@ export const deleteProducto = async (codigo: string) => {
 }
 
 // // carga masiva
-// export const cargarprod = async () => {
+// export const cargarprod = async (carga) => {
 //     try {
 //         console.log('carga de datos...');
-//         zapas.map(async (zapa) => {
+//         carga.map(async () => {
 //             const codigo = nanoid(20);
 //             const docRef = doc(db, "Productos", codigo);
-//             await setDoc(docRef, { codigo: codigo, ...zapa });
+//             await setDoc(docRef, { codigo: codigo, ...carga });
 //             window.location.reload();
 //         });
 //     } catch (error) {
 //         console.log(error);
 //     }
 // };
+
+//carga masiva de datos
+// export const zapas = async () => {
+//     try{
+//         console.log('carga de datos...');
+//         zapas.map(async (zapa) => {
+//             const codigo = nanoid(20);
+//             const docRef = doc(db, "Zapatillas", codigo);
+//             await setDoc(docRef, { codigo: codigo, ...zapa });
+//             window.location.reload();
+//         })
+//     }catch(error) {
+//         console.log(error)
+//     }
+// }
