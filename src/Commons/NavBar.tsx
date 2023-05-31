@@ -18,7 +18,7 @@ import { routes } from '../Components/routes';
 import { NavLink } from 'react-router-dom';
 import { LoginPage } from '../Pages/login/LoginPage';
 import path from 'path';
-
+import tn from '../img/tn.png'
 
 
 const pages = ['NskShop', 'Merchan', 'Sobre NSK', 'BackEnd'];
@@ -138,7 +138,7 @@ function ResponsiveAppBar() {
                         
                         <Tooltip title="Abrir configuración">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                                <Avatar className='avatar' alt="Remy Sharp" src={tn} />
                             </IconButton>
                         </Tooltip>
                         

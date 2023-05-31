@@ -95,3 +95,12 @@
     border-radius: 5px;
     cursor: pointer; */
 }
+
+
+.css-1wlk0hk-MuiAvatar-root {
+    height: 80px !important;
+    width: 80px !important;
+}
+.css-1pqm26d-MuiAvatar-img {
+    height: 50px !important;
+}
