@@ -1,9 +1,12 @@
 body{
   /* background-image: linear-gradient(to right top, #ff0000, #c20023, #820327, #420f1d, #000000); */
   /* background-image: linear-gradient(to right top, #a4a4a4, #787878, #4f4f4f, #2a2a2a, #000000); */
-  background-image: url('./img/graffiti.jpg');
+  background: rgb(255,0,9);
+  background: linear-gradient(30deg, rgba(255,0,9,0.8431022067029936) 6%, rgba(255,0,0,0.8290966044620973) 13%, rgba(1,10,130,0.8851190134256828) 61%, rgba(1,11,154,0.6974439433976716) 99%, rgba(0,5,36,0.9971638313528537) 100%);
+  /* background-image: url('./img/graffiti.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* filter: blur(45); */
 }
 
 main {

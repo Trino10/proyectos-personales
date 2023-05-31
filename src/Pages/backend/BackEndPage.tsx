@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { IProducto } from '../../Components/interfaces/IProductos'
-import { getProductos, newProducto } from '../../Components/firebase/FBPr'
+import { getProductos, newProducto, zapas } from '../../Components/firebase/FBPr'
 import { useForm } from 'react-hook-form'
 import { Button, Grid, TextField } from '@mui/material'
 import './backend.css'
@@ -126,10 +126,10 @@ export const BackEndPage = () => {
           <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
             Añadir Producto
           </Button>
-          <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
+          {/* <Button className='botonform' type='submit' variant="contained" sx={{ marginTop: '10px' }}>
             Cargar datos
-          </Button>
-          
+          </Button> */}
+          <Button variant='contained' onClick={zapas}>Cargar Datos</Button>
         </form>
 
       </Grid>
